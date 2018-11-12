@@ -4,6 +4,12 @@
  Build:
  
  ```
- pip install requirements.txt
+ $ pip install requirements.txt
  
+```
+Run:
+
+```
+$ python WebCrawler.py
+
 ```
