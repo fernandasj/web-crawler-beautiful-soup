@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 import this
 import requests
 from bs4 import BeautifulSoup as bs
@@ -8,12 +9,14 @@ noticias = conteudo.findAll('span', {'class': 'title-link__title-text'})
 titulo = conteudo.find('title')
 
 print('\n')
+print('SITE:')
 print('___________________________________')
 print(titulo.string)
 print('___________________________________')
 print('\n')
 
 for noticia in noticias:
+    print('NOTICIA:')
     print('===================================================================')
     print(noticia.string)
     print('===================================================================')
